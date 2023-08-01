@@ -1,0 +1,144 @@
+#pageContainer {
+  box-sizing: border-box;
+  background-color: #FFA737;
+  float:center;
+  width: 98%; /*an inelegant solution to get the framing I wanted*/
+  margin: 20px;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#imageContainer1 {
+  background-color: black; 
+  border-color: black;
+  border-width: 10px 10px 5px 10px;
+  /* ^^an inelegant solution to a weird transparent strip between the bottom of the image and the border.*/
+  width: 25%;
+  height: auto;
+  float: right;
+  padding: 0px;
+  margin: 15px;
+  border-color: black;
+  border-width: 10px 10px 5px 10px;
+  border-style: solid;
+/* I remembered this being a thing from the introductory lesson and I wanted the image to float right but be in line with the text, so I went back to that lesson and figured out how they did it*/ 
+}
+
+#imageContainer2 {
+  background-color: black;
+  width: 25%;
+  float: left;
+  padding: 0px;
+  margin: 15px;
+  box-sizing: border-box;
+  border-color: black;
+  border-width: 10px 10px 5px 10px;
+  border-style: solid;
+  border-radius: 0%;
+}
+
+nav {
+  background-color: #DC851F;
+  float: left;
+  margin: 20px;
+  margin-top: 10px;
+  width: 98%;
+  height: auto;
+  border-radius: 10px;
+  padding: 0px;
+  text-align: center;
+}
+
+footer {
+  background-color: #DC851F;
+  float: left;
+  margin: 20px;
+  margin-top: 10px;
+  width: 98%;
+  height: auto;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+/*--------------------------------------------------------*/
+/*------------------^Containers^--------------------------*/
+/*--------------------------------------------------------*/
+.btn {  /*went back a couple lessons to remind myself how to do buttons*/
+  display: inline-block;
+  background-color: #FFA737;
+  padding: 8px;
+  margin: 2px 20px 2px 20px;
+  border-radius: 10px;
+}
+
+a {
+  color: #343330;
+} 
+
+/*--------------------------------------------------------*/
+/*------------------^Buttons/Links^-----------------------*/
+/*--------------------------------------------------------*/
+.tbd {
+  color: red;
+  /*font-size: 54;*/
+}
+
+/*
+html {
+  height: 100%;
+  width: 100%;
+}
+*/
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 72px;
+  color: black;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 45px;
+  color:#343330;
+  text-align: center;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 36px;
+  color: #45462A;
+  text-align: left;
+}
+
+h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 27px;
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: left;
+  color: #343330;
+}
+
+box {
+  
+}
+
+btn {
+  
+}
+
+colors { /*base palette courtesy of Coolors*/
+  color: black;
+  color: #343330; /*Jet*/
+  color: #45462A; /*Drab dark brown*display:*/
+  color: #7E5920;
+  color: #DC851F;
+  color: #FFA737;
+  color: white;
+}
+
+
