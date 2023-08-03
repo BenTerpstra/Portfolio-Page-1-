@@ -1,160 +1,106 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en"> <!--the debugger told me to-->
+<!---->  
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Ben Terpstra Web Portfolio</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-  
-<!-------------------------------------------------------->
-
-<body style="background-color: #343330"<!--Jet-->> 
+<!---->  
+<body style="background-color: #343330"> 
     <header>
-    <!--<p class="tbd">HEADER START</p>-->
-    <nav>
-      <h2> 
-        <a href="#" class="btn">intro</a> <a href="#" class="btn">about me</a> <a href="#" class="btn">contact</a> <a href="#" class="btn">just for fun</a> <a href="#" class="btn">this one's broken</a>
-      </h2>
-      
+    <nav> <!--Includes both links to sections w/in page and w/in site-->
+      <h4> 
+        <a href="#intro" class="btn">intro</a> <a href="#about-me" class="btn">about me</a> <a href="#more" class="btn">more about me</a> <a href="#contact" class="btn">contact</a> <a href="just-for-fun.html" class="btn">just for fun</a> <a href="404.html" class="btn">broken</a>
+      </h4>  
     </nav>
   </header>
-  <div id="pageContainer" float="center"> 
-
-    <div id="imageContainer1">
-      <img src="images/headshot-portrait.jpg" width="100%" alt="Headshots. If you've got 'em, use 'em, am I right?" title="If you've got 'em, use 'em, am I right?"/> <!--looked up how to do mouseover just for fun-->
+<!---->  
+  <div id="pageContainer"> <!--To contain all elements below header/nav-->
+    <div id="imageContainer1"> <!--To contain images so they can have a side by side layout-->
+      <img src="images/headshot-portrait.jpg" width=100% alt="Headshots. If you've got 'em, use 'em, am I right?" title="If you've got 'em, use 'em, am I right?"> <!--looked up how to do mouseover just for fun-->
+<!--Sidenote: the debugger told me not to write width=100%, but everything else I've tried screws up the whole layout. I decided to take the L on two errors.-->
     </div> 
-  
-<!-------------------------------------------------------->
-  
+<!---->  
 <main>
-    <h1>Benjamin Daniel Terpstra</h1>
-    <h2>here's the intro heading "Pleasure to meet you!"</h2>
-      <h3>with subheading "or, more accurately, for you to meet me"</h3>
-  <hr>
-  <p class="tbd">here is where my {Intro} will go; include who I am and where I'm from</p>
-  <p class="tbd">and here is where a side-by-side headshot will go</p>
-<hr>
-  
-<!-------------------------------------------------------->
-
-  <h2>Section heading for {About Me} page</h2>
-      <p class="tbd">must include info re: passion for web dev and willingness to work with others</p>
-    <h3>Heading for list 1: Fun Facts</h3>
-
-    <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-      </ul>
-  
-    <h3>Heading for list 2: Steps for fixing US gov't or reasons for leaving ed or somesuch</h3>
-    <h4>I'm going to do my best to not be dismal</h4>
-          <p>maybe include nested lists?</p>
+    <h1><strong>Benjamin Daniel Terpstra</strong></h1>  <!--Welcome banner-->
+    <h2><i>It's a pleasure to meet you!</i></h2>
+      <h3 class="align-right"><i>(albeit asynchronously)</i></h3>
+  <hr id="intro"> <!--I put the tag in <hr> to coerce a better screen layout when the link is followed-->
+<!---->  
+<article >  <!--Introduction-->
+  <h2 class="underline">Let me Introduce Myself!</h2>
+<!---->
+<p>
+Hello! My name is Benjamin Daniel Terpstra, but my friends call me Ben and my students call me Mr. T. I'm a seasoned actor, reluctant educator, and aspiring web developer. I was born in Oak Ridge TN and moved to Chicago in September of 2018 to pursue a career in theatre. <br>In order to finance my first year in the city, I took a position as a non-traditional volunteer with Americorps and did a year of service, and spent the majority of that time working as a teacher's aide in a 6th grade math classroom. This gave me the resume to apply for TA positions, and I stumbled into a fledgling career as an educator. I currently work as a Special Education Teacher's Aide for 6th, 7th, and 8th grades at a school on the near Southwest side of the city. <br>Although education as a profession is incredibly important and often fulfilling, I'm more and more that teaching in America is unsustainable as a career, bordering on unhealthy. The demands of teaching coupled with the inevitable financial stress that comes with a TA's have convinced me that I need to pursue a change in careers, which is what has led me here!
+</p>
+<!---->
+<br>
+</article>
+<hr id="about-me"> <!--I put the tag in <hr> to coerce a better screen layout when the link is followed-->
+<!---->  
+<article>   <!--About Me-->
+  <h2 class="underline">About Me</h2>
+<!---->
+    <h3>Why Web Development?</h3>
+      <p>
+Although education as a profession is incredibly important and often fulfilling, I'm more and more that teaching in America is unsustainable as a career, bordering on unhealthy. The demands of teaching coupled with the inevitable financial stress that comes with a TA's have convinced me that I need to pursue a change in careers, which is what has led me here!<br> I think that working in Web Development is an excellent choice for a change in career path for two reasons: First, because I believe I will have a knack for it, both from a technical and interpersonal perspective; and second, because I believe it will effectively support the positive changes I need in my life at this juncture.<br>Coming from a theatre background, I have extensive experience working with others on large projects that leverage creativity. Having worked in education, I've learned how to collaboratively address immense challenges, support colleagues when times are tough, and leverage empathy and insight to improve interactions with those I work for (students, parents, administration, etc.). Having grown up in a science town and pursued science in an academic context (I was originally a physics major), I believe I have the analytical skills to meet the demands of the technical aspects of the job. <br>On a more personal note, I've known for a long time that the biggest thing getting in the way of my theatre career are work-related stress and exhaustion compounded with financial stress. Teaching doesn't really allow space in your life for anything other than teaching, and I want to be more than just my job. I believe that web development will allow me to more effectively support myself financially while reducing stress. Plus, I  get to work collaboritively with others in a creative context! Web development could meet my needs while still feeding my passion and playing to my strengths.
+      </p>
+<hr id="more">
+<!---->  
+  <h2 class="underline">More About Me</h2>
+    <h3 class="large">Fun Facts:</h3>
       <ol>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
+        <li>I'm a 3rd child born on the 3rd of the 3rd month of 1993. I have had to prove this to students in the past by showing them my I.D.</li>
+        <li>I once gave a *technically illegal* bellyrub to an adolescent jaguar in a Belizean zoo.</li>
+        <li>I've shaken Lin-Manuel Miranda's hand.</li>
+        <li>When I was 10, I had a rare auto-immune disease that put me in a wheelchair for 6 months; consequently I can hold a wheelchair wheelie indefinitely.</li>
+        <li>I'm ambidextrous, but only while playing pool.</li>
       </ol>
-<hr>
-
-<!-------------------------------------------------------->
-
-  <h2>Section heading for {Contact} page</h2>
+<!---->  
+    <h3 class="large">My 3 Favorite Numbers, in order:</h3>
+      <ul>
+        <li><strong>3</strong>--Given the circumstances of my birth, I don't know if I ever had a choice in the matter.</li>
+        <li><strong>27</strong>--3 raised to the power of 3.</li>
+        <li><strong>42</strong>--It's the ultimate answer.</li>
+      </ul>
+  <br>
+</article>
+<hr id="contact"> <!--I put the tag in <hr> to coerce a better screen layout when the link is followed-->
+<!---->  
+<article>  <!--Contact-->
+  <h2 class="underline">Contact Information</h2>
     <ul>
-      <li>linkedin</li>
-      <li>github</li>
-      <li>email</li>
-      <li>phone number</li>
-      <li>address</li>
-      <li>fake SSN</li>
-    </ul>
-<hr>  
-<!--
-  <main></main>
-  <header></header>
-  <article></article>
-  <section></section>
-  <div></div>
-  <footer></footer>
-
-  <h1 class=""></h1>
-  <h2></h2>
-  <h3></h3>  
-  <h4></h4>
-  <h5></h5>
-  <h6></h6>
-  <p class=""></p>
-  <link href="">
-  <a href=""></a>
-  <img src="">
-
-  <box></box>    
-  <btn></btn>
-  <nav></nav>
-  <hr>
-  .classes
-  .pseudoclasses
--->
-  
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  
-  
-      
-  Hello world
-    <p class="tbd">MAIN END</p>
+      <li>linkedin: <a href="https://www.linkedin.com/in/ben-terpstra-801552286/" class="btn">linkedin</a></li>
+      <li>github: <a href="https://github.com/BenTerpstra" class="btn">github</a>
+</li>
+      <li>email: <a href="404.html" class="btn">bdterpstra@gmail.com</a>
+</li>
+      <li>phone number: <a href="404.html" class="btn">(555) 555-5555</a></li>
+      <li>address: <a href="https://www.google.com/search?q=555+N+Sheridan&rlz=1C1CHBF_enUS924US924&oq=555+N+Sheridan&aqs=chrome..69i57j0i512l2j0i22i30j0i390i650l5.1310j0j7&sourceid=chrome&ie=UTF-8" class="btn">555 N Sheridan Rd., Chicago IL</a></li>
+      <li>SSN: <a href="404.html" class="btn">555-55-5555</a></li>
+    </ul> 
+</article>
 </main>
-  
-<!-------------------------------------------------------->
-<!--
+<!---->  
+  </div>   
 <footer>
-      <p class="tbd">FOOTER START</p>
-  <p class="tbd">THIS IS THE FOOTER</p>
-
-  <div id="imageContainer2">
-    <img src="images/headshot-landscape.jpg" width="100%" alt="Headshots. If you've got 'em, use 'em, am I right?" title="If you've got 'em, use 'em, am I right?"/>   
-  </div> --> <!-- I swear, I'm not as vain as this makes me seem. I hope. -->
-    <!--<h2>Section heading for {Contact} page</h2>
-    <ul>
-      <li>linkedin</li>
-      <li>github</li>
-      <li>email</li>
-      <li>phone number</li>
-      <li>address</li>
-      <li>fake SSN</li>
-    </ul>
-  
-
-  
-      <p class="tbd">FOOTER END</p>
-</footer>  -->
-  </div>
-<footer>
-
-  <div id="imageContainer2">
-    <img src="images/headshot-landscape.jpg" width="100%" alt="Headshots. If you've got 'em, use 'em, am I right?" title="If you've got 'em, use 'em, am I right?"/>   
-  </div> <!-- I swear, I'm not as vain as this makes me seem. I hope. -->
-    <h2>Section heading for {Contact} page</h2>
-    <ul>
-      <li>linkedin</li>
-      <li>github</li>
-      <li>email</li>
-      <li>phone number</li>
-      <li>address</li>
-      <li>fake SSN</li>
-    </ul>
-  
-
-
+  <nav>    <!--Re-used nav for a footer with a picture and contact links-->
+    <div id="imageContainer2"> 
+    <img src="images/headshot-landscape.jpg" width=100% alt="Headshots. If you've got 'em, use 'em, am I right?" title="If you've got 'em, use 'em, right?">   
+  </div> <!-- I swear, I'm not as vain as these pictures makes me seem. I'm just an actor, so I have headshots readily available. Then again, right now I'm probably protesting too much. -->
+    <p class="align-center">
+      <a href="https://www.linkedin.com/in/ben-terpstra-801552286/" class="btn">linkedin</a>
+      <a href="https://github.com/BenTerpstra" class="btn">github</a>
+      <a href="404.html" class="btn">bdterpstra@gmail.com</a>
+      <a href="404.html" class="btn">(555) 555-5555</a>
+      <a href="https://www.google.com/search?q=555+N+Sheridan&rlz=1C1CHBF_enUS924US924&oq=555+N+Sheridan&aqs=chrome..69i57j0i512l2j0i22i30j0i390i650l5.1310j0j7&sourceid=chrome&ie=UTF-8" class="btn">555 N Sheridan</a>
+    </p>
+  </nav>
 </footer>  
-<!-------------------------------------------------------->
-
-<h1 class="tbd">DO NOT FORGET CODE COMMENTS!!!<br>also, make sure to include <strong>strong</strong> and <em>emphasize</em><br>also also, go through file/images and rename appropriately</h1>
-  <h1 class="tbd">Also don't forget the README</h1>
-  
+<!---->  
   <script src="script.js"></script>
 </body>
 </html>
